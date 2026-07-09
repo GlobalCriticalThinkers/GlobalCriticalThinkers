@@ -3,40 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Critical Thinkers — Zero Ego, Real Critical Thinking</title>
-  <meta name="description" content="Global Critical Thinkers is a business case competition for students who want to think clearly, not just talk loudly. Four roles, one real case, no script.">
+  <title>Global Critical Thinkers — International Business Case Competition</title>
+  <meta name="description" content="Global Critical Thinkers is an international business case competition for high school and university students. Four roles, one real case, no script.">
 
-  <!-- Open Graph / social sharing -->
-  <meta property="og:title" content="Global Critical Thinkers — Zero Ego, Real Critical Thinking">
-  <meta property="og:description" content="A business case competition for students who want to think clearly, not just talk loudly.">
+  <meta property="og:title" content="Global Critical Thinkers — International Business Case Competition">
+  <meta property="og:description" content="An international business case competition for ambitious students who want to think clearly, not just talk loudly.">
   <meta property="og:image" content="images/hero.jpg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="images/logo.png" type="image/png">
 
-  <!-- Fonts: Fraunces (editorial display serif) + Montserrat (body / brand UI face) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Skip link for keyboard / screen reader users -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Scroll progress thread: signature element, fills as visitor moves through the story -->
   <div class="progress-thread" aria-hidden="true">
     <div class="progress-thread__fill" id="progressFill"></div>
   </div>
 
-  <!-- Persistent header -->
   <header class="site-header" id="siteHeader">
     <div class="site-header__inner">
       <a href="#arrival" class="site-header__logo">
-        <img src="images/logo.png" alt="Global Critical Thinkers" width="36" height="36">
+        <img src="images/logo.png" alt="Global Critical Thinkers" width="32" height="32">
         <span>Global Critical Thinkers</span>
       </a>
       <a href="#registration" class="site-header__cta">Register now</a>
@@ -46,167 +41,428 @@
   <main id="main">
 
     <!-- ============================================ -->
-    <!-- SCENE 1 — ARRIVAL -->
+    <!-- HERO -->
     <!-- ============================================ -->
-    <section class="scene scene--arrival" id="arrival" aria-labelledby="arrival-heading">
-      <div class="scene__media">
-        <img src="images/hero.jpg" alt="Four students arriving together, about to take on a real business case" loading="eager">
-        <div class="scene__scrim"></div>
+    <section class="hero" id="arrival" aria-labelledby="hero-heading">
+      <div class="hero__media">
+        <img src="images/hero.jpg" alt="Four students in a strategy discussion during Global Critical Thinkers" loading="eager">
       </div>
-      <div class="scene__content">
-        <p class="eyebrow">Global Critical Thinkers</p>
-        <h1 id="arrival-heading" class="scene__headline">Zero ego.<br>Real critical thinking.</h1>
-        <p class="scene__sub">Four roles. One real case. No script.</p>
-        <a href="#mission" class="scroll-cue" aria-label="Scroll to the next scene">
-          <span>Begin the story</span>
-          <svg width="16" height="24" viewBox="0 0 16 24" fill="none" aria-hidden="true">
-            <path d="M8 2v18M8 20l-6-6M8 20l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+      <div class="hero__scrim"></div>
+      <div class="hero__frame" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__kicker">
+          <span class="hero__kicker-line"></span>
+          <span class="hero__kicker-text">International Business Case Competition</span>
+        </div>
+        <h1 id="hero-heading" class="hero__headline">Zero ego.<br><em>Real</em> critical thinking.</h1>
+        <div class="hero__foot">
+          <p class="hero__sub">Four roles. One real case. No script. A competition built for students who'd rather be right than sound right.</p>
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-num">4</div>
+              <div class="hero__stat-label">Roles per team</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">1</div>
+              <div class="hero__stat-label">Live business case</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">∞</div>
+              <div class="hero__stat-label">Questions asked</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#mission" class="scroll-cue" aria-label="Scroll to the next section">
+        <span>Scroll</span>
+        <svg width="14" height="20" viewBox="0 0 16 24" fill="none" aria-hidden="true">
+          <path d="M8 2v18M8 20l-6-6M8 20l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- MISSION — statistic band, no image -->
+    <!-- ============================================ -->
+    <section class="section section--navy-deep mission" id="mission" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="mission__top reveal">
+          <div>
+            <p class="eyebrow">The mission</p>
+            <h2 id="mission-heading" class="display-lg mission__headline">A real case.<br>A real deadline.</h2>
+          </div>
+          <p class="mission__copy">No hypotheticals, no rehearsed pitches. Every team receives the same live case, sourced from an actual Indonesian business, and works against the same clock. What separates the winners isn't confidence. It's how they think under pressure.</p>
+        </div>
+
+        <div class="mission__stats reveal-stagger" id="missionStats">
+          <div class="mission__stat">
+            <div class="mission__stat-num">1</div>
+            <div class="mission__stat-label">Business case, identical for every team, revealed on the day</div>
+          </div>
+          <div class="mission__stat">
+            <div class="mission__stat-num">4</div>
+            <div class="mission__stat-label">Distinct roles a team must fill: Analyst, Financial Analyst, Strategist, Presenter</div>
+          </div>
+          <div class="mission__stat">
+            <div class="mission__stat-num">0</div>
+            <div class="mission__stat-label">Scripted answers permitted during the judges' defense round</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============================================ -->
-    <!-- SCENE 2 — MISSION -->
+    <!-- DISCUSSION — editorial split, quote block -->
     <!-- ============================================ -->
-    <section class="scene scene--mission" id="mission" aria-labelledby="mission-heading">
-      <div class="scene__media">
-        <img src="images/gambar1.jpg" alt="The team receiving a real business case to solve" loading="lazy">
-        <div class="scene__scrim"></div>
-      </div>
-      <div class="scene__content">
-        <p class="eyebrow">The mission</p>
-        <h2 id="mission-heading" class="scene__headline">A real case. A real deadline.</h2>
-        <p class="scene__sub">No hypotheticals. The challenge comes from an actual Indonesian business, and the clock starts now.</p>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SCENE 3 — DISCUSSION -->
-    <!-- ============================================ -->
-    <section class="scene scene--discussion scene--centered" id="discussion" aria-labelledby="discussion-heading">
-      <div class="scene__media">
-        <img src="images/gambar2.jpg" alt="The full team discussing the case together" loading="lazy">
-        <div class="scene__scrim"></div>
-      </div>
-      <div class="scene__content">
-        <p class="eyebrow">The discussion</p>
-        <h2 id="discussion-heading" class="scene__headline">Four ways of thinking.<br>One team.</h2>
-        <p class="scene__sub">Every idea gets challenged here, before it ever reaches a judge.</p>
+    <section class="section section--paper discussion" id="discussion" aria-labelledby="discussion-heading">
+      <div class="container">
+        <div class="discussion__grid">
+          <div class="discussion__text reveal">
+            <p class="eyebrow eyebrow--dark">The discussion</p>
+            <h2 id="discussion-heading" class="display-lg">Four ways of thinking.<br>One team.</h2>
+            <blockquote class="discussion__quote">
+              "The best teams don't agree quickly. They disagree well, then land somewhere stronger than where any one of them started."
+              <cite>— Case facilitator note, GCT judging panel</cite>
+            </blockquote>
+          </div>
+          <div class="discussion__media reveal">
+            <img src="images/gambar2.jpg" alt="The full team discussing the business case together around a whiteboard">
+            <div class="discussion__tag">
+              <strong>45</strong>
+              <span>Minutes to align on a single direction before drafting begins</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============================================ -->
-    <!-- SCENE 4 — ANALYSIS (role split: Analyst + Financial Analyst) -->
+    <!-- ANALYSIS — asymmetric role cards -->
     <!-- ============================================ -->
-    <section class="scene scene--analysis" id="analysis" aria-labelledby="analysis-heading">
-      <div class="scene__content scene__content--split">
-        <div class="split-header">
+    <section class="section section--navy analysis" id="analysis" aria-labelledby="analysis-heading">
+      <div class="container">
+        <div class="analysis__head reveal">
           <p class="eyebrow">The analysis</p>
-          <h2 id="analysis-heading" class="scene__headline">Where the thinking gets rigorous.</h2>
+          <h2 id="analysis-heading" class="display-lg">Where the thinking<br>gets rigorous.</h2>
         </div>
-        <div class="split-grid">
-          <figure class="split-card">
-            <img src="images/gambar3.jpg" alt="The Analyst breaking down the core problem in the business case" loading="lazy">
-            <figcaption>
-              <span class="role-label">Analyst</span>
-              <p>Breaks the case down to its real problem, not the one on the surface.</p>
-            </figcaption>
-          </figure>
-          <figure class="split-card">
-            <img src="images/gambar4.jpg" alt="The Financial Analyst testing whether the numbers hold up" loading="lazy">
-            <figcaption>
-              <span class="role-label">Financial Analyst</span>
-              <p>Tests every assumption against the numbers. If it doesn't hold up, it doesn't go forward.</p>
-            </figcaption>
-          </figure>
-          <figure class="split-card">
-            <img src="images/gambar2.jpg" alt="The Strategist connecting the analysis into a plan of action" loading="lazy">
-            <figcaption>
-              <span class="role-label">Strategist</span>
-              <p>Turns the analysis into a plan the team can actually defend.</p>
-            </figcaption>
-          </figure>
+
+        <div class="role-grid reveal-stagger">
+          <article class="role-card">
+            <div class="role-card__media">
+              <img src="images/gambar3.jpg" alt="The Analyst breaking down the core problem in the business case">
+            </div>
+            <span class="role-card__num">01</span>
+            <div class="role-card__body">
+              <h3 class="role-card__title">Analyst</h3>
+              <p class="role-card__desc">Breaks the case down to its real problem, not the one sitting on the surface.</p>
+            </div>
+          </article>
+          <article class="role-card">
+            <div class="role-card__media">
+              <img src="images/gambar4.jpg" alt="The Financial Analyst testing whether the numbers hold up">
+            </div>
+            <span class="role-card__num">02</span>
+            <div class="role-card__body">
+              <h3 class="role-card__title">Financial Analyst</h3>
+              <p class="role-card__desc">Tests every assumption against the numbers. If it doesn't hold up, it doesn't go forward.</p>
+            </div>
+          </article>
+          <article class="role-card">
+            <div class="role-card__media">
+              <img src="images/gambar2.jpg" alt="The Strategist connecting analysis into a plan of action">
+            </div>
+            <span class="role-card__num">03</span>
+            <div class="role-card__body">
+              <h3 class="role-card__title">Strategist</h3>
+              <p class="role-card__desc">Turns the analysis into a plan the team can actually stand behind.</p>
+            </div>
+          </article>
+          <article class="role-card">
+            <div class="role-card__media">
+              <img src="images/gambar5.jpg" alt="The Presenter, team leader, delivering the case to the room">
+            </div>
+            <span class="role-card__num">04</span>
+            <div class="role-card__body">
+              <h3 class="role-card__title">Presenter</h3>
+              <p class="role-card__desc">Everything the team built comes down to this. Clear thinking, spoken plainly.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ============================================ -->
-    <!-- SCENE 5 — PRESENTATION (Presenter / Team Leader focus) -->
+    <!-- PRESENTATION — collage composition -->
     <!-- ============================================ -->
-    <section class="scene scene--presentation scene--right" id="presentation" aria-labelledby="presentation-heading">
-      <div class="scene__media">
-        <img src="images/gambar5.jpg" alt="The Presenter, team leader, delivering the case to the room" loading="lazy">
-        <div class="scene__scrim"></div>
-      </div>
-      <div class="scene__content">
-        <p class="eyebrow">The presentation · Presenter, team leader</p>
-        <h2 id="presentation-heading" class="scene__headline">The idea meets the room.</h2>
-        <p class="scene__sub">Everything the team built comes down to this. Clear thinking, spoken plainly.</p>
+    <section class="section section--paper presentation" id="presentation" aria-labelledby="presentation-heading">
+      <div class="container">
+        <div class="presentation__grid">
+          <div class="presentation__collage reveal">
+            <img class="c1" src="images/gambar6.jpg" alt="A team member speaking during the presentation round">
+            <img class="c2" src="images/gambar1.jpg" alt="Judges and delegates listening during a presentation">
+          </div>
+          <div class="presentation__text reveal">
+            <p class="eyebrow eyebrow--dark">The presentation</p>
+            <h2 id="presentation-heading" class="display-lg">The idea meets the room.</h2>
+            <ul class="presentation__list">
+              <li><b>10 minutes</b> to present the full recommendation, unaided by a script.</li>
+              <li><b>Any team member</b> can be asked to answer, not only the Presenter.</li>
+              <li><b>Clarity over polish.</b> Judges are trained to reward substance, not delivery flourish.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============================================ -->
-    <!-- SCENE 6 — DEFENSE -->
+    <!-- DEFENSE — the one big cinematic moment, earned -->
     <!-- ============================================ -->
-    <section class="scene scene--defense scene--top" id="defense" aria-labelledby="defense-heading">
-      <div class="scene__media">
+    <section class="defense" id="defense" aria-labelledby="defense-heading">
+      <div class="defense__media">
         <img src="images/gambar6.jpg" alt="The team fielding tough questions from the judges" loading="lazy">
-        <div class="scene__scrim"></div>
       </div>
-      <div class="scene__content">
-        <p class="eyebrow">The defense</p>
-        <h2 id="defense-heading" class="scene__headline">Every idea gets challenged.<br>Every ego gets left at the door.</h2>
-        <p class="scene__sub">The judges push back. The team holds its ground, or changes its mind. Both are wins.</p>
+      <div class="defense__scrim"></div>
+      <div class="container">
+        <div class="defense__content reveal">
+          <p class="eyebrow">The defense</p>
+          <h2 id="defense-heading" class="display-lg defense__headline">Every idea gets challenged.<br><em>Every ego</em> gets left at the door.</h2>
+          <p class="lede" style="margin-top:1.3rem;">The judges push back, hard. The team holds its ground or changes its mind in real time. Both are wins, if the reasoning behind them is sound.</p>
+          <div class="defense__marks">
+            <div class="defense__mark">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span>15-minute open cross-examination</span>
+            </div>
+            <div class="defense__mark">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Judged on reasoning, not just conclusions</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============================================ -->
-    <!-- SCENE 7 — ACHIEVEMENT -->
+    <!-- TIMELINE -->
     <!-- ============================================ -->
-    <section class="scene scene--achievement scene--resolution" id="achievement" aria-labelledby="achievement-heading">
-      <div class="scene__media">
+    <section class="section section--navy timeline" id="timeline" aria-labelledby="timeline-heading">
+      <div class="container">
+        <div class="timeline__head reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2 id="timeline-heading" class="display-lg">From registration<br>to the final round.</h2>
+        </div>
+        <div class="timeline-list reveal-stagger">
+          <div class="timeline-item">
+            <span class="timeline-item__date">[[TIMELINE_DATE_1_PLACEHOLDER]]</span>
+            <span class="timeline-item__title">[[TIMELINE_TITLE_1_PLACEHOLDER]]</span>
+            <span class="timeline-item__tag">Registration</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__date">[[TIMELINE_DATE_2_PLACEHOLDER]]</span>
+            <span class="timeline-item__title">[[TIMELINE_TITLE_2_PLACEHOLDER]]</span>
+            <span class="timeline-item__tag">Case release</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__date">[[TIMELINE_DATE_3_PLACEHOLDER]]</span>
+            <span class="timeline-item__title">[[TIMELINE_TITLE_3_PLACEHOLDER]]</span>
+            <span class="timeline-item__tag">Preliminary round</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__date">[[TIMELINE_DATE_4_PLACEHOLDER]]</span>
+            <span class="timeline-item__title">[[TIMELINE_TITLE_4_PLACEHOLDER]]</span>
+            <span class="timeline-item__tag">Final round</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ACHIEVEMENT — emotional payoff -->
+    <!-- ============================================ -->
+    <section class="section achievement" id="achievement" aria-labelledby="achievement-heading">
+      <div class="achievement__media">
         <img src="images/gambar1.jpg" alt="The team at the moment of resolution, case closed" loading="lazy">
-        <div class="scene__scrim"></div>
       </div>
-      <div class="scene__content">
-        <p class="eyebrow">The outcome</p>
-        <h2 id="achievement-heading" class="scene__headline">This isn't a competition to be right.<br>It's one to think clearly.</h2>
-        <p class="scene__sub" data-placeholder="prize">[[PRIZE_PLACEHOLDER]]</p>
+      <div class="achievement__scrim"></div>
+      <div class="container">
+        <div class="achievement__content reveal">
+          <p class="eyebrow">The outcome</p>
+          <h2 id="achievement-heading" class="display-lg achievement__headline">This isn't a competition<br>to be right.<br>It's one to think clearly.</h2>
+          <p class="achievement__prize" data-placeholder="prize">[[PRIZE_PLACEHOLDER]]</p>
+        </div>
       </div>
     </section>
 
     <!-- ============================================ -->
-    <!-- SCENE 8 — REGISTRATION -->
+    <!-- TRUST — tabbed dossier: Partners / Judges / Awards / Testimonials / Venue / FAQ -->
     <!-- ============================================ -->
-    <section class="scene scene--registration" id="registration" aria-labelledby="registration-heading">
-      <div class="scene__content scene__content--registration">
-        <p class="eyebrow">Registration</p>
-        <h2 id="registration-heading" class="scene__headline">You could be the fifth teammate.</h2>
+    <section class="section section--paper trust" id="trust" aria-labelledby="trust-heading">
+      <div class="container">
+        <div class="trust__head reveal">
+          <p class="eyebrow eyebrow--dark">The record</p>
+          <h2 id="trust-heading" class="display-lg">Everything you'd want<br>to verify before you commit.</h2>
+        </div>
 
-        <dl class="registration-details">
-          <div class="registration-details__item">
-            <dt>Price</dt>
-            <dd data-placeholder="price">[[PRICE_PLACEHOLDER]]</dd>
-          </div>
-          <div class="registration-details__item">
-            <dt>Early bird</dt>
-            <dd data-placeholder="early-bird">[[EARLY_BIRD_DEADLINE_PLACEHOLDER]]</dd>
-          </div>
-          <div class="registration-details__item">
-            <dt>Registration closes</dt>
-            <dd data-placeholder="deadline">[[REGISTRATION_DEADLINE_PLACEHOLDER]]</dd>
-          </div>
-          <div class="registration-details__item registration-details__item--urgent">
-            <dt>Seats remaining</dt>
-            <dd data-placeholder="seats">[[SEATS_REMAINING_PLACEHOLDER]]</dd>
-          </div>
-        </dl>
+        <div class="trust-tabs" role="tablist" aria-label="Trust information categories">
+          <button class="trust-tab is-active" role="tab" aria-selected="true" data-tab="partners">Partners</button>
+          <button class="trust-tab" role="tab" aria-selected="false" data-tab="judges">Judges</button>
+          <button class="trust-tab" role="tab" aria-selected="false" data-tab="awards">Awards</button>
+          <button class="trust-tab" role="tab" aria-selected="false" data-tab="testimonials">Testimonials</button>
+          <button class="trust-tab" role="tab" aria-selected="false" data-tab="venue">Venue</button>
+          <button class="trust-tab" role="tab" aria-selected="false" data-tab="faq">FAQ</button>
+        </div>
 
-        <div class="cta-row">
-          <a href="[[REGISTRATION_LINK_PLACEHOLDER]]" class="cta-button" data-placeholder="cta-label">
-            [[CTA_LABEL_PLACEHOLDER]]
-          </a>
+        <div class="trust-panel is-active" data-panel="partners">
+          <div class="logo-row">
+            <div class="logo-cell">[[PARTNER_1_PLACEHOLDER]]</div>
+            <div class="logo-cell">[[PARTNER_2_PLACEHOLDER]]</div>
+            <div class="logo-cell">[[PARTNER_3_PLACEHOLDER]]</div>
+            <div class="logo-cell">[[PARTNER_4_PLACEHOLDER]]</div>
+          </div>
+        </div>
+
+        <div class="trust-panel" data-panel="judges">
+          <div class="judge-grid">
+            <div class="judge-card">
+              <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
+              <div class="judge-card__name">[[JUDGE_NAME_1_PLACEHOLDER]]</div>
+              <div class="judge-card__role">[[JUDGE_ROLE_1_PLACEHOLDER]]</div>
+            </div>
+            <div class="judge-card">
+              <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
+              <div class="judge-card__name">[[JUDGE_NAME_2_PLACEHOLDER]]</div>
+              <div class="judge-card__role">[[JUDGE_ROLE_2_PLACEHOLDER]]</div>
+            </div>
+            <div class="judge-card">
+              <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
+              <div class="judge-card__name">[[JUDGE_NAME_3_PLACEHOLDER]]</div>
+              <div class="judge-card__role">[[JUDGE_ROLE_3_PLACEHOLDER]]</div>
+            </div>
+            <div class="judge-card">
+              <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
+              <div class="judge-card__name">[[JUDGE_NAME_4_PLACEHOLDER]]</div>
+              <div class="judge-card__role">[[JUDGE_ROLE_4_PLACEHOLDER]]</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-panel" data-panel="awards">
+          <div class="award-list">
+            <div class="award-row"><span class="award-row__name">Champion</span><span class="award-row__value">[[AWARD_1_PLACEHOLDER]]</span></div>
+            <div class="award-row"><span class="award-row__name">1st Runner-up</span><span class="award-row__value">[[AWARD_2_PLACEHOLDER]]</span></div>
+            <div class="award-row"><span class="award-row__name">2nd Runner-up</span><span class="award-row__value">[[AWARD_3_PLACEHOLDER]]</span></div>
+            <div class="award-row"><span class="award-row__name">Best Presenter</span><span class="award-row__value">[[AWARD_4_PLACEHOLDER]]</span></div>
+          </div>
+        </div>
+
+        <div class="trust-panel" data-panel="testimonials">
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p>"[[TESTIMONIAL_1_PLACEHOLDER]]"</p>
+              <div class="testimonial-card__author">[[TESTIMONIAL_AUTHOR_1_PLACEHOLDER]]</div>
+            </div>
+            <div class="testimonial-card">
+              <p>"[[TESTIMONIAL_2_PLACEHOLDER]]"</p>
+              <div class="testimonial-card__author">[[TESTIMONIAL_AUTHOR_2_PLACEHOLDER]]</div>
+            </div>
+            <div class="testimonial-card">
+              <p>"[[TESTIMONIAL_3_PLACEHOLDER]]"</p>
+              <div class="testimonial-card__author">[[TESTIMONIAL_AUTHOR_3_PLACEHOLDER]]</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-panel" data-panel="venue">
+          <div class="venue-panel">
+            <div class="venue-panel__img">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.3"/></svg>
+            </div>
+            <dl>
+              <div><dt>Location</dt><dd>[[VENUE_NAME_PLACEHOLDER]]</dd></div>
+              <div><dt>Address</dt><dd>[[VENUE_ADDRESS_PLACEHOLDER]]</dd></div>
+              <div><dt>Format</dt><dd>[[VENUE_FORMAT_PLACEHOLDER]]</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="trust-panel" data-panel="faq">
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-item__q"><span>[[FAQ_Q1_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>[[FAQ_A1_PLACEHOLDER]]</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__q"><span>[[FAQ_Q2_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>[[FAQ_A2_PLACEHOLDER]]</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__q"><span>[[FAQ_Q3_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>[[FAQ_A3_PLACEHOLDER]]</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__q"><span>[[FAQ_Q4_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>[[FAQ_A4_PLACEHOLDER]]</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- REGISTRATION — two column, luxury pricing card -->
+    <!-- ============================================ -->
+    <section class="section registration" id="registration" aria-labelledby="registration-heading">
+      <div class="container">
+        <div class="registration__grid">
+          <div class="reveal">
+            <p class="eyebrow">Registration</p>
+            <h2 id="registration-heading" class="display-lg registration__headline">You could be the<br>fifth teammate.</h2>
+            <p class="lede registration__copy">Register your team of four and step into a real case, judged by people who've done this for a living. No hypotheticals. No safety net.</p>
+            <ul class="registration__benefits">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>One live business case from an actual Indonesian company</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Direct feedback from an experienced judging panel</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>A certificate of participation and, for finalists, a public defense round</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <div class="price-card">
+              <span class="price-card__label">Registration information</span>
+              <h3 class="price-card__title">Team of four</h3>
+              <div class="price-tiers">
+                <div class="price-tier price-tier--active">
+                  <div>
+                    <div class="price-tier__name">Early Bird</div>
+                    <div class="price-tier__deadline">Until 31 August 2026</div>
+                  </div>
+                  <div class="price-tier__amount">IDR 1,500,000</div>
+                </div>
+                <div class="price-tier">
+                  <div>
+                    <div class="price-tier__name">Regular Price</div>
+                    <div class="price-tier__deadline">From 1 September 2026</div>
+                  </div>
+                  <div class="price-tier__amount">IDR 1,700,000</div>
+                </div>
+              </div>
+              <div class="price-card__seats">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg>
+                <span data-placeholder="seats">[[SEATS_REMAINING_PLACEHOLDER]]</span>
+              </div>
+              <a href="[[REGISTRATION_LINK_PLACEHOLDER]]" class="btn btn--gold price-card__cta">Register Now</a>
+              <p class="price-card__note">Price is per team of four. Confirmation sent within 48 hours of payment.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -217,19 +473,47 @@
   <!-- FOOTER -->
   <!-- ============================================ -->
   <footer class="site-footer">
-    <p class="site-footer__bookend">Zero ego. Real critical thinking. Your turn.</p>
-    <div class="site-footer__inner">
-      <div class="site-footer__brand">
-        <img src="images/logo.png" alt="Global Critical Thinkers" width="28" height="28">
-        <span>Global Critical Thinkers</span>
+    <p class="site-footer__bookend">Zero ego. Real critical thinking.<br>Your turn.</p>
+
+    <div class="site-footer__main">
+      <div>
+        <div class="site-footer__brand">
+          <img src="images/logo.png" alt="Global Critical Thinkers" width="44" height="44">
+          <span>Global Critical<br>Thinkers</span>
+        </div>
+        <p class="site-footer__tagline">An international business case competition for students who'd rather think clearly than talk loudly.</p>
       </div>
-      <p class="site-footer__tagline">Zero ego, real critical thinking.</p>
-      <nav class="site-footer__links" aria-label="Footer">
-        <a href="[[CONTACT_LINK_PLACEHOLDER]]">Contact</a>
-        <a href="[[INSTAGRAM_LINK_PLACEHOLDER]]">Instagram</a>
-        <a href="#registration">Register</a>
+
+      <nav class="footer-col" aria-label="Site navigation">
+        <p class="footer-col__title">Explore</p>
+        <ul>
+          <li><a href="#mission">The mission</a></li>
+          <li><a href="#analysis">The roles</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#trust">FAQ</a></li>
+        </ul>
       </nav>
-      <p class="site-footer__credit">&copy; <span id="currentYear"></span> Global Critical Thinkers.</p>
+
+      <nav class="footer-col" aria-label="Registration">
+        <p class="footer-col__title">Register</p>
+        <ul>
+          <li><a href="#registration">Pricing</a></li>
+          <li><a href="[[REGISTRATION_LINK_PLACEHOLDER]]">Register your team</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Contact">
+        <p class="footer-col__title">Contact</p>
+        <ul>
+          <li><a href="[[CONTACT_LINK_PLACEHOLDER]]">Email us</a></li>
+          <li><a href="[[INSTAGRAM_LINK_PLACEHOLDER]]">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>&copy; <span id="currentYear"></span> Global Critical Thinkers.</p>
+      <p>Zero ego, real critical thinking.</p>
     </div>
   </footer>
 

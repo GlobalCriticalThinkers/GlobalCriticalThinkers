@@ -15,18 +15,18 @@ A single-page, scroll-driven cinematic story site for Global Critical Thinkers (
 
 ## 2. Replacing the placeholder images
 
-The eight scenes use these image files, all in `/images`:
+These image files, all in `/images`, are used across the redesigned page:
 
 | File | Used in | Shot needed |
 |---|---|---|
 | `logo.png` | Header, footer | Square logo, transparent background |
-| `hero.jpg` | Scene 1, Arrival | Full team, wide shot |
-| `gambar1.jpg` | Scene 2, Mission (also reused in Scene 7, Achievement) | Full team receiving the case |
-| `gambar2.jpg` | Scene 3, Discussion | Full team collaborating |
-| `gambar3.jpg` | Scene 4, Analysis | Analyst role foregrounded |
-| `gambar4.jpg` | Scene 4, Analysis | Financial Analyst role foregrounded |
-| `gambar5.jpg` | Scene 5, Presentation | Presenter (Team Leader) foregrounded |
-| `gambar6.jpg` | Scene 6, Defense | Full team fielding questions |
+| `hero.jpg` | Hero | Full team, wide shot |
+| `gambar1.jpg` | Achievement section | Full team at the moment of resolution |
+| `gambar2.jpg` | Discussion section, Analysis (Strategist card) | Full team collaborating |
+| `gambar3.jpg` | Analysis section (Analyst card) | Analyst role foregrounded |
+| `gambar4.jpg` | Analysis section (Financial Analyst card) | Financial Analyst role foregrounded |
+| `gambar5.jpg` | Analysis section (Presenter card) | Presenter (Team Leader) foregrounded |
+| `gambar6.jpg` | Presentation collage, Defense section | Presentation moment / team fielding questions |
 
 To swap an image: just replace the file with the same filename and same rough aspect ratio, no HTML editing needed. If you want to use a different filename, update the matching `src="images/..."` in `index.html` and update the `alt` text to describe the new image accurately (this matters for accessibility and SEO, don't leave it blank).
 
@@ -40,15 +40,20 @@ All placeholder content lives in `index.html` and is wrapped in double brackets 
 
 | Placeholder | Where | What to put there |
 |---|---|---|
-| `[[PRIZE_PLACEHOLDER]]` | Scene 7, Achievement | The prize/outcome line, e.g. "Winners take home Rp 15,000,000 and a fast-track interview with our partner firms." |
-| `[[PRICE_PLACEHOLDER]]` | Scene 8, Registration | Ticket price, e.g. "Rp 350,000 / team" |
-| `[[EARLY_BIRD_DEADLINE_PLACEHOLDER]]` | Scene 8, Registration | Early bird cutoff, e.g. "Before 1 August — Rp 275,000" |
-| `[[REGISTRATION_DEADLINE_PLACEHOLDER]]` | Scene 8, Registration | Final registration cutoff date |
-| `[[SEATS_REMAINING_PLACEHOLDER]]` | Scene 8, Registration | Urgency line, e.g. "12 of 40 teams remaining" |
-| `[[CTA_LABEL_PLACEHOLDER]]` | Scene 8, Registration button | Button text, e.g. "Register your team" |
-| `[[REGISTRATION_LINK_PLACEHOLDER]]` | Scene 8, Registration button `href` | The actual signup URL (Google Form, WhatsApp link, etc.) |
+| `[[PRIZE_PLACEHOLDER]]` | Achievement section | The prize/outcome line, e.g. "Winners take home Rp 15,000,000 and a fast-track interview with our partner firms." |
+| `[[SEATS_REMAINING_PLACEHOLDER]]` | Registration pricing card | Urgency line, e.g. "12 of 40 teams remaining" |
+| `[[REGISTRATION_LINK_PLACEHOLDER]]` | Registration CTA button, footer | The actual signup URL (Google Form, WhatsApp link, etc.) — used twice |
 | `[[CONTACT_LINK_PLACEHOLDER]]` | Footer | Contact link, e.g. `mailto:hello@globalcriticalthinkers.com` |
 | `[[INSTAGRAM_LINK_PLACEHOLDER]]` | Footer | Instagram profile URL |
+| `[[TIMELINE_DATE_1..4_PLACEHOLDER]]` / `[[TIMELINE_TITLE_1..4_PLACEHOLDER]]` | Timeline section | Four milestone dates and titles, e.g. "1 Aug 2026" / "Registration opens" |
+| `[[PARTNER_1..4_PLACEHOLDER]]` | Trust → Partners tab | Partner/sponsor names (swap the text cell for a logo image when ready) |
+| `[[JUDGE_NAME_1..4_PLACEHOLDER]]` / `[[JUDGE_ROLE_1..4_PLACEHOLDER]]` | Trust → Judges tab | Judge names and their title/organization |
+| `[[AWARD_1..4_PLACEHOLDER]]` | Trust → Awards tab | Prize values for Champion, 1st/2nd Runner-up, Best Presenter |
+| `[[TESTIMONIAL_1..3_PLACEHOLDER]]` / `[[TESTIMONIAL_AUTHOR_1..3_PLACEHOLDER]]` | Trust → Testimonials tab | Quotes from past participants and their name/school |
+| `[[VENUE_NAME_PLACEHOLDER]]` / `[[VENUE_ADDRESS_PLACEHOLDER]]` / `[[VENUE_FORMAT_PLACEHOLDER]]` | Trust → Venue tab | Venue details, e.g. "in-person" or "hybrid" |
+| `[[FAQ_Q1..4_PLACEHOLDER]]` / `[[FAQ_A1..4_PLACEHOLDER]]` | Trust → FAQ tab | Four question/answer pairs |
+
+Note: pricing itself (Early Bird IDR 1,500,000 until 31 August 2026; Regular IDR 1,700,000) is written directly into the registration pricing card rather than as a placeholder — edit it in `index.html` under the `.price-card` markup when the dates or amounts change.
 
 **To edit:** open `index.html`, use your editor's find function (Ctrl/Cmd+F) to search for `[[`, and replace each placeholder with real content. Because every placeholder is already styled as if it were final copy (same font size, weight, and spacing as everything around it), swapping the text will never shift the layout or break the design. You do not need to touch `style.css` for any of this.
 
@@ -71,11 +76,12 @@ All placeholder content lives in `index.html` and is wrapped in double brackets 
 
 ## 5. Design notes
 
-- **Colors:** Navy (`#0B1220`, `#070B14`) and gold (`#C9A24B`, `#E8CB86`), matching the GCT brand identity used across the pitch deck.
-- **Typefaces:** Fraunces (headlines, editorial serif) and Montserrat (body text and UI, matches the existing GCT PowerPoint deck).
-- **Motion:** Nearly everything animates with pure CSS (hover states, the floating scroll cue, the scene reveal transition, the CTA button lift). JavaScript is only used for the three things CSS cannot do on its own: filling the scroll progress thread, toggling the header's background on scroll, and triggering the reveal animation via IntersectionObserver when a scene enters the viewport.
-- **Reduced motion:** If a visitor has "reduce motion" set at the OS level, all animation is disabled and content displays immediately at full opacity, no flicker, no reliance on JS timing.
-- **Accessibility:** Semantic landmarks (`header`, `main`, `footer`), one `h1` on the page with `h2` per scene, all images have descriptive alt text, visible focus rings on every interactive element, a skip-to-content link for keyboard users.
+- **Colors:** Navy (`#0B1220`, `#070B14`) and gold (`#C9A24B`, `#E8CB86`) on dark sections; warm paper (`#F7F4EC`) on light editorial sections, matching the GCT brand identity.
+- **Typefaces:** Fraunces (headlines, editorial serif, including italic for emphasis) and Montserrat (body text, labels, UI).
+- **Layout variety:** the page deliberately avoids repeating the same "fullscreen image + text" pattern. Sections include a statistic band (Mission), an editorial split with a pull-quote (Discussion), asymmetrical floating role cards (Analysis), an overlapping photo collage (Presentation), one high-tension fullbleed moment (Defense), a timeline list, a radial-scrim emotional close (Achievement), a tabbed trust dossier (Partners/Judges/Awards/Testimonials/Venue/FAQ), and a two-column registration layout with a luxury pricing card.
+- **Motion:** Nearly everything animates with pure CSS (hover states, the floating scroll cue, reveal transitions, the CTA lift, FAQ accordion height). JavaScript covers what CSS can't: the scroll progress thread fill, the header's scrolled state, reveal-on-scroll via IntersectionObserver, the trust-section tab switching, and the FAQ accordion toggle.
+- **Reduced motion:** If a visitor has "reduce motion" set at the OS level, all animation is disabled and content displays immediately at full opacity.
+- **Accessibility:** Semantic landmarks (`header`, `main`, `footer`), one `h1` on the page with `h2` per section, all images have descriptive alt text, visible focus rings on every interactive element, a skip-to-content link, and proper `role="tab"`/`aria-selected` wiring on the trust tabs.
 
 ---
 
