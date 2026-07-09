@@ -552,6 +552,8 @@ body {
 }
 @media (max-width: 560px) {
   .role-grid { grid-template-columns: 1fr; }
+  .role-card__media { aspect-ratio: 16/9; }
+  .role-card__body { padding: 1.2rem 1.4rem; }
 }
 
 /* -------------------------------------------------------------------------
@@ -1051,6 +1053,7 @@ body {
 .price-card__seats svg { color: var(--gold); flex-shrink: 0; }
 .price-card__cta { display: block; text-align: center; width: 100%; margin-top: 1.8rem; }
 .price-card__note { margin-top: 1rem; font-size: 0.72rem; color: var(--muted-on-navy); text-align: center; }
+.price-card__note--top { margin-top: 0.6rem; text-align: left; line-height: 1.5; }
 
 @media (max-width: 900px) {
   .registration__grid { grid-template-columns: 1fr; }
