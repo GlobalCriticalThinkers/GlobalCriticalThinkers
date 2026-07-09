@@ -220,15 +220,14 @@ body {
 }
 
 .site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
+  position: relative;
   z-index: 800;
-  padding: 1.5rem var(--edge-pad);
-  transition: padding 0.4s var(--ease), background 0.4s var(--ease), border-color 0.4s var(--ease);
+  padding: 0 var(--edge-pad);
+  background: var(--navy-950, #070b14);
+  transition: background 0.4s var(--ease), border-color 0.4s var(--ease);
   border-bottom: 1px solid transparent;
 }
 .site-header.is-scrolled {
-  padding-block: 0.9rem;
   background: rgba(7, 11, 20, 0.86);
   backdrop-filter: blur(14px);
   border-bottom-color: var(--line-navy);
@@ -236,23 +235,28 @@ body {
 .site-header__inner {
   max-width: 1280px;
   margin-inline: auto;
+  min-height: 104px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: min-height 0.4s var(--ease);
+}
+.site-header.is-scrolled .site-header__inner {
+  min-height: 84px;
 }
 .site-header__logo {
   display: flex;
   align-items: center;
 }
 .site-header__logo-img {
-  width: clamp(150px, 15vw, 210px);
+  width: clamp(180px, 15vw, 220px);
   height: auto;
   display: block;
   transition: width 0.4s var(--ease);
 }
-.site-header.is-scrolled .site-header__logo-img { width: clamp(120px, 11vw, 160px); }
+.site-header.is-scrolled .site-header__logo-img { width: clamp(150px, 12vw, 180px); }
 @media (max-width: 560px) {
-  .site-header__logo-img { width: 140px; }
+  .site-header__logo-img { width: 160px; }
 }
 .site-header__cta {
   font-size: 0.78rem;
@@ -263,6 +267,8 @@ body {
   border: 1px solid var(--gold-dim);
   border-radius: var(--radius-sm);
   transition: all 0.3s var(--ease);
+  display: inline-flex;
+  align-items: center;
 }
 .site-header__cta:hover { background: var(--gold); color: var(--navy-950); border-color: var(--gold); }
 
@@ -271,10 +277,13 @@ body {
    ------------------------------------------------------------------------- */
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: calc(100svh - 104px);
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+}
+@media (max-width: 560px) {
+  .hero { min-height: calc(100svh - 88px); }
 }
 .hero__media { position: absolute; inset: 0; z-index: 0; }
 .hero__media img {
