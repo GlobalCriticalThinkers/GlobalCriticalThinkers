@@ -693,16 +693,45 @@ body {
 }
 .achievement__content { position: relative; z-index: 2; max-width: 780px; margin-inline: auto; }
 .achievement__headline { margin-top: 1.4rem; }
-.achievement__prize {
+.achievement__outcomes {
   margin-top: 2.2rem;
   display: inline-block;
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.3rem;
-  color: var(--gold-light);
   border-top: 1px solid var(--gold-dim);
   border-bottom: 1px solid var(--gold-dim);
-  padding: 1.1rem 2.2rem;
+  padding: 1.6rem 2.4rem;
+}
+.achievement__outcomes-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+}
+.achievement__outcomes-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+.achievement__outcomes-list li {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--paper, #f4f1ea);
+  position: relative;
+  padding-left: 1rem;
+}
+.achievement__outcomes-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold-light);
 }
 
 /* -------------------------------------------------------------------------
