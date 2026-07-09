@@ -31,8 +31,11 @@
   <header class="site-header" id="siteHeader">
     <div class="site-header__inner">
       <a href="#arrival" class="site-header__logo">
-        <img src="images/logo.png" alt="Global Critical Thinkers" width="32" height="32">
-        <span>Global Critical Thinkers</span>
+        <img src="images/logo.png" alt="Global Critical Thinkers" width="52" height="52">
+        <span class="site-header__wordmark">
+          <span class="site-header__title">Global Critical Thinkers</span>
+          <span class="site-header__subtitle">International Business Case Competition</span>
+        </span>
       </a>
       <a href="#registration" class="site-header__cta">Register now</a>
     </div>
@@ -308,67 +311,90 @@
           <button class="trust-tab is-active" role="tab" aria-selected="true" data-tab="partners">Partners</button>
           <button class="trust-tab" role="tab" aria-selected="false" data-tab="judges">Judges</button>
           <button class="trust-tab" role="tab" aria-selected="false" data-tab="awards">Awards</button>
-          <button class="trust-tab" role="tab" aria-selected="false" data-tab="testimonials">Testimonials</button>
+          <button class="trust-tab" role="tab" aria-selected="false" data-tab="why-gct">Why Join GCT</button>
           <button class="trust-tab" role="tab" aria-selected="false" data-tab="venue">Venue</button>
           <button class="trust-tab" role="tab" aria-selected="false" data-tab="faq">FAQ</button>
         </div>
 
         <div class="trust-panel is-active" data-panel="partners">
+          <div class="panel-intro">
+            <h3 class="panel-intro__title">Strategic Partners</h3>
+            <p class="panel-intro__copy">We are currently collaborating with universities, industry leaders, and organizations to deliver an exceptional competition experience. Official partners will be announced soon.</p>
+          </div>
           <div class="logo-row">
-            <div class="logo-cell">[[PARTNER_1_PLACEHOLDER]]</div>
-            <div class="logo-cell">[[PARTNER_2_PLACEHOLDER]]</div>
-            <div class="logo-cell">[[PARTNER_3_PLACEHOLDER]]</div>
-            <div class="logo-cell">[[PARTNER_4_PLACEHOLDER]]</div>
+            <div class="logo-cell">
+              <span class="logo-cell__label">Partner Announcement</span>
+              <span class="logo-cell__status">Coming Soon</span>
+            </div>
+            <div class="logo-cell">
+              <span class="logo-cell__label">Partner Announcement</span>
+              <span class="logo-cell__status">Coming Soon</span>
+            </div>
+            <div class="logo-cell">
+              <span class="logo-cell__label">Partner Announcement</span>
+              <span class="logo-cell__status">Coming Soon</span>
+            </div>
+            <div class="logo-cell">
+              <span class="logo-cell__label">Partner Announcement</span>
+              <span class="logo-cell__status">Coming Soon</span>
+            </div>
           </div>
         </div>
 
         <div class="trust-panel" data-panel="judges">
-          <div class="judge-grid">
+          <div class="panel-intro">
+            <h3 class="panel-intro__title">Meet Our Judges</h3>
+            <p class="panel-intro__copy">Our judging panel consists of experienced professionals from business, industry, and academia. Official names will be revealed closer to the event.</p>
+          </div>
+          <div class="judge-grid judge-grid--three">
             <div class="judge-card">
               <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
-              <div class="judge-card__name">[[JUDGE_NAME_1_PLACEHOLDER]]</div>
-              <div class="judge-card__role">[[JUDGE_ROLE_1_PLACEHOLDER]]</div>
+              <div class="judge-card__name">Government Representative</div>
+              <div class="judge-card__role">To Be Announced</div>
             </div>
             <div class="judge-card">
               <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
-              <div class="judge-card__name">[[JUDGE_NAME_2_PLACEHOLDER]]</div>
-              <div class="judge-card__role">[[JUDGE_ROLE_2_PLACEHOLDER]]</div>
+              <div class="judge-card__name">Industry Executive</div>
+              <div class="judge-card__role">To Be Announced</div>
             </div>
             <div class="judge-card">
               <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
-              <div class="judge-card__name">[[JUDGE_NAME_3_PLACEHOLDER]]</div>
-              <div class="judge-card__role">[[JUDGE_ROLE_3_PLACEHOLDER]]</div>
-            </div>
-            <div class="judge-card">
-              <div class="judge-card__photo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
-              <div class="judge-card__name">[[JUDGE_NAME_4_PLACEHOLDER]]</div>
-              <div class="judge-card__role">[[JUDGE_ROLE_4_PLACEHOLDER]]</div>
+              <div class="judge-card__name">Academic Expert</div>
+              <div class="judge-card__role">To Be Announced</div>
             </div>
           </div>
         </div>
 
         <div class="trust-panel" data-panel="awards">
+          <div class="panel-intro">
+            <h3 class="panel-intro__title">Recognition &amp; Certification</h3>
+            <p class="panel-intro__copy">This competition does not provide cash prizes. Every participant who completes the competition will receive an official certificate.</p>
+          </div>
           <div class="award-list">
-            <div class="award-row"><span class="award-row__name">Champion</span><span class="award-row__value">[[AWARD_1_PLACEHOLDER]]</span></div>
-            <div class="award-row"><span class="award-row__name">1st Runner-up</span><span class="award-row__value">[[AWARD_2_PLACEHOLDER]]</span></div>
-            <div class="award-row"><span class="award-row__name">2nd Runner-up</span><span class="award-row__value">[[AWARD_3_PLACEHOLDER]]</span></div>
-            <div class="award-row"><span class="award-row__name">Best Presenter</span><span class="award-row__value">[[AWARD_4_PLACEHOLDER]]</span></div>
+            <div class="award-row"><span class="award-row__name">Champion</span><span class="award-row__value">Certificate</span></div>
+            <div class="award-row"><span class="award-row__name">Excellence Award <em>(Top 10%)</em></span><span class="award-row__value">Certificate</span></div>
+            <div class="award-row"><span class="award-row__name">Outstanding Team</span><span class="award-row__value">Certificate</span></div>
+            <div class="award-row"><span class="award-row__name">Best Presenter</span><span class="award-row__value">Certificate</span></div>
+            <div class="award-row"><span class="award-row__name">Best Strategic Thinking</span><span class="award-row__value">Certificate</span></div>
+            <div class="award-row"><span class="award-row__name">Best Critical Analysis</span><span class="award-row__value">Certificate</span></div>
+            <div class="award-row"><span class="award-row__name">Judges' Recognition</span><span class="award-row__value">Certificate</span></div>
+            <div class="award-row"><span class="award-row__name">Certificate of Participation</span><span class="award-row__value">All Participants</span></div>
           </div>
         </div>
 
-        <div class="trust-panel" data-panel="testimonials">
-          <div class="testimonial-grid">
-            <div class="testimonial-card">
-              <p>"[[TESTIMONIAL_1_PLACEHOLDER]]"</p>
-              <div class="testimonial-card__author">[[TESTIMONIAL_AUTHOR_1_PLACEHOLDER]]</div>
+        <div class="trust-panel" data-panel="why-gct">
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>Real Business Cases</h3>
+              <p>Solve authentic business challenges inspired by real-world situations.</p>
             </div>
-            <div class="testimonial-card">
-              <p>"[[TESTIMONIAL_2_PLACEHOLDER]]"</p>
-              <div class="testimonial-card__author">[[TESTIMONIAL_AUTHOR_2_PLACEHOLDER]]</div>
+            <div class="feature-card">
+              <h3>Professional Feedback</h3>
+              <p>Receive valuable insights from experienced judges and industry professionals.</p>
             </div>
-            <div class="testimonial-card">
-              <p>"[[TESTIMONIAL_3_PLACEHOLDER]]"</p>
-              <div class="testimonial-card__author">[[TESTIMONIAL_AUTHOR_3_PLACEHOLDER]]</div>
+            <div class="feature-card">
+              <h3>Leadership &amp; Collaboration</h3>
+              <p>Develop teamwork, communication, strategic thinking, and confidence in a high-pressure environment.</p>
             </div>
           </div>
         </div>
@@ -378,32 +404,99 @@
             <div class="venue-panel__img">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.3"/></svg>
             </div>
-            <dl>
-              <div><dt>Location</dt><dd>[[VENUE_NAME_PLACEHOLDER]]</dd></div>
-              <div><dt>Address</dt><dd>[[VENUE_ADDRESS_PLACEHOLDER]]</dd></div>
-              <div><dt>Format</dt><dd>[[VENUE_FORMAT_PLACEHOLDER]]</dd></div>
-            </dl>
+            <div class="venue-panel__body">
+              <p class="eyebrow eyebrow--dark">Venue</p>
+              <h3 class="venue-panel__name">Premium 4-Star Hotel</h3>
+              <p class="venue-panel__location">Jakarta, Indonesia</p>
+              <p class="venue-panel__note">The official venue will be announced to all registered participants after registration closes.</p>
+            </div>
           </div>
         </div>
 
         <div class="trust-panel" data-panel="faq">
           <div class="faq-list">
             <div class="faq-item">
-              <button class="faq-item__q"><span>[[FAQ_Q1_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-              <div class="faq-item__a"><p>[[FAQ_A1_PLACEHOLDER]]</p></div>
+              <button class="faq-item__q"><span>Who can participate?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>Global Critical Thinkers is open to junior high school students, senior high school students, university students, and fresh graduates.</p></div>
             </div>
             <div class="faq-item">
-              <button class="faq-item__q"><span>[[FAQ_Q2_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-              <div class="faq-item__a"><p>[[FAQ_A2_PLACEHOLDER]]</p></div>
+              <button class="faq-item__q"><span>Can I register individually or as a team?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>Yes. Participants may register individually or with friends. Final team arrangements (up to 10 participants per team) will be organized by the committee to ensure balanced collaboration.</p></div>
             </div>
             <div class="faq-item">
-              <button class="faq-item__q"><span>[[FAQ_Q3_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-              <div class="faq-item__a"><p>[[FAQ_A3_PLACEHOLDER]]</p></div>
+              <button class="faq-item__q"><span>Do I need prior business experience?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>No. The competition is designed for both beginners and experienced participants.</p></div>
             </div>
             <div class="faq-item">
-              <button class="faq-item__q"><span>[[FAQ_Q4_PLACEHOLDER]]</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-              <div class="faq-item__a"><p>[[FAQ_A4_PLACEHOLDER]]</p></div>
+              <button class="faq-item__q"><span>What language will be used?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>English.</p></div>
             </div>
+            <div class="faq-item">
+              <button class="faq-item__q"><span>What should I prepare?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>A laptop, business casual attire, an optional notebook, and an open mindset with a willingness to collaborate.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__q"><span>Is accommodation included?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>Lunch and two coffee breaks are included. Transportation and accommodation are not included.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__q"><span>When will the venue be announced?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>The official venue will be announced before the event.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__q"><span>What happens after payment?</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+              <div class="faq-item__a"><p>Your registration will be confirmed within 48 hours after payment verification.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- WHY GCT — icon cards + founding-generation strip -->
+    <!-- ============================================ -->
+    <section class="section section--navy why-gct" id="why-gct" aria-labelledby="why-gct-heading">
+      <div class="container">
+        <div class="why-gct__head reveal">
+          <p class="eyebrow">Why GCT?</p>
+          <h2 id="why-gct-heading" class="display-lg">More than a competition.</h2>
+          <p class="lede" style="margin-top:1.3rem;">Spend one full day solving a real business challenge, collaborating with ambitious students, presenting your ideas before experienced judges, and building connections that extend far beyond the competition.</p>
+        </div>
+
+        <div class="why-grid reveal-stagger">
+          <div class="why-card">
+            <div class="why-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <h3>Real Business Case</h3>
+            <p>Solve authentic business challenges inspired by real-world situations.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <h3>Professional Judges</h3>
+            <p>Present your ideas before experienced professionals from industry and academia.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5c-.8 0-1.5-.7-1.5-1.5v-13z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5v-13z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+            <h3>Exclusive Learning Journey</h3>
+            <p>Receive pre-event workshops in Critical Thinking and Public Speaking, participate in an online technical meeting (gladi resik), and continue developing throughout the competition.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.6L22 9.3l-5 4.9 1.2 6.9L12 17.8l-6.2 3.3L7 14.2 2 9.3l7.1-.7L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <h3>Beyond The Competition</h3>
+            <p>Top-performing participants will receive priority consideration for an exclusive champions-only competition planned for late 2027.</p>
+          </div>
+        </div>
+
+        <div class="founding reveal">
+          <div class="founding__text">
+            <p class="founding__eyebrow">Be The First.</p>
+            <p class="founding__copy">Every great tradition begins somewhere. Join the inaugural Global Critical Thinkers and become part of the founding generation that shapes the future of this competition.</p>
+          </div>
+          <div class="founding__journey">
+            <span>GCT 2026</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Top Performing Participants</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="founding__journey-highlight">Exclusive Champions Competition 2027</span>
           </div>
         </div>
       </div>
@@ -417,8 +510,8 @@
         <div class="registration__grid">
           <div class="reveal">
             <p class="eyebrow">Registration</p>
-            <h2 id="registration-heading" class="display-lg registration__headline">You could be the<br>fifth teammate.</h2>
-            <p class="lede registration__copy">Register your team of four and step into a real case, judged by people who've done this for a living. No hypotheticals. No safety net.</p>
+            <h2 id="registration-heading" class="display-lg registration__headline">Claim your place<br>at the table.</h2>
+            <p class="lede registration__copy">Register individually or with friends and step into a real case, judged by people who've done this for a living. No hypotheticals. No safety net.</p>
             <ul class="registration__benefits">
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -426,11 +519,11 @@
               </li>
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span>Direct feedback from an experienced judging panel</span>
+                <span>Pre-event workshops in Critical Thinking and Public Speaking, plus direct feedback from an experienced judging panel</span>
               </li>
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span>A certificate of participation and, for finalists, a public defense round</span>
+                <span>An official certificate and a personal performance report card from assessors</span>
               </li>
             </ul>
           </div>
@@ -438,7 +531,8 @@
           <div class="reveal">
             <div class="price-card">
               <span class="price-card__label">Registration information</span>
-              <h3 class="price-card__title">Team of four</h3>
+              <h3 class="price-card__title">Registration Fee</h3>
+              <p class="price-card__subtitle">Individual and Team Registration Available</p>
               <div class="price-tiers">
                 <div class="price-tier price-tier--active">
                   <div>
@@ -457,11 +551,32 @@
               </div>
               <div class="price-card__seats">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5"/></svg>
-                <span data-placeholder="seats">[[SEATS_REMAINING_PLACEHOLDER]]</span>
+                <span data-placeholder="seats">72 Seats Remaining</span>
               </div>
               <a href="[[REGISTRATION_LINK_PLACEHOLDER]]" class="btn btn--gold price-card__cta">Register Now</a>
-              <p class="price-card__note">Price is per team of four. Confirmation sent within 48 hours of payment.</p>
+              <p class="price-card__note">Confirmation sent within 48 hours of payment verification.</p>
             </div>
+          </div>
+        </div>
+
+        <div class="includes reveal">
+          <p class="eyebrow">Your Registration Includes</p>
+          <div class="includes__grid reveal-stagger">
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Business Case Competition</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Critical Thinking Strategy Workshop</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Public Speaking Workshop</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Online Technical Meeting (Gladi Resik)</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>E-Book</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Premium 4-Star Hotel Venue</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lunch</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Two Coffee Breaks</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Official Certificate</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Personal Performance Report Card from Assessors</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>GCT Delegate Kit</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Official Name Badge</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Professional Networking</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Closing Ceremony</span></div>
+            <div class="includes__item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Priority pathway to the exclusive 2027 Champions Competition</span></div>
           </div>
         </div>
       </div>
@@ -489,7 +604,7 @@
         <ul>
           <li><a href="#mission">The mission</a></li>
           <li><a href="#analysis">The roles</a></li>
-          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#why-gct">Why GCT</a></li>
           <li><a href="#trust">FAQ</a></li>
         </ul>
       </nav>
